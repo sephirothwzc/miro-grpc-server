@@ -1,0 +1,25 @@
+{
+  "development": {
+    "dialect": "mysql",
+    "host": "153.133.13.133",
+    "port": "3303",
+    "database": "dev",
+    "username": "root",
+    "password": "3333333"
+  },
+  "test": {
+    "dialect": "mysql",
+    "host": "153.133.13.133",
+    "port": "3303",
+    "database": "dev",
+    "username": "root",
+    "password": "3333333"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
