@@ -18,7 +18,7 @@ export = (appInfo: any) => {
   // };
 
   config.midwayGrpcServer = {
-    protoPath: 'app/proto', // *.proto path
+    protoPath: 'lib/proto', // *.proto path
     extendPath: 'app/grpc', // service path
     host: '0.0.0.0',
     port: '50051',

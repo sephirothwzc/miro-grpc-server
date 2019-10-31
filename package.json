@@ -38,7 +38,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-midway-advokate-wxapi --framework=midway",
+    "start": "egg-scripts start --title=egg-server-midway-advokate-wxapi --framework=midway",
     "stop": "egg-scripts stop --title=egg-server-midway-advokate-wxapi",
     "start_build": "npm run build && NODE_ENV=development midway-bin dev",
     "dev": "NODE_ENV=local midway-bin dev --ts",
@@ -47,7 +47,7 @@
     "cov": "midway-bin cov --ts",
     "lint": "tslint -c tslint.json --project .",
     "ci": "npm run cov",
-    "build": "midway-bin build -c"
+    "build": "midway-bin build -c && cp -r src/lib/proto dist/lib/proto"
   },
   "ci": {
     "version": "8, 10"
