@@ -267,3 +267,10 @@ then、Promise.all
     ctx.body = result;
   }
 ```
+
+### docker
+
+```
+docker image build -t miro-grpc-server:1.0 .
+docker container run --publish 50051:50051 --detach --name miro-grpc-server miro-grpc-server:1.0
+```
