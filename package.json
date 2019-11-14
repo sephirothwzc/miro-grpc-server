@@ -8,6 +8,7 @@
     "@types/flake-idgen": "^0.1.30",
     "biguint-format": "^1.0.1",
     "egg-cache": "^0.0.6",
+    "egg-consul-plus": "^2.0.1",
     "egg-jwt": "^3.1.6",
     "egg-scripts": "^2.10.0",
     "egg-view-nunjucks": "^2.2.0",

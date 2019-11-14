@@ -12,5 +12,9 @@ export = {
   nunjucks: {
     enable: true,
     package: 'egg-view-nunjucks'
+  },
+  consulPlus: {
+    enable: true,
+    package: 'egg-consul-plus'
   }
 };

@@ -14,4 +14,9 @@ export class HomeController extends BaseController {
   async view(ctx: Context) {
     await ctx.render('index');
   }
+
+  @get('/')
+  async index(ctx: Context) {
+    ctx.body = 'hi consul';
+  }
 }

@@ -109,3 +109,30 @@ export const joiSwagger = {
     }
   }
 };
+
+export const consul = {
+  server: {
+    host: '127.0.0.1', // 注册中心ip地址
+    port: 8500 // 注册中心端口号
+  },
+  services: [
+    // 服务发现列表
+    // {
+    //   referName: 'consulPlusTest', // 引用名，后续可用 app.services.referName 访问服务
+    //   comment: 'consulPlusTest', // 备注
+    //   serviceId: 'consul-plus-test' // 服务id
+    // }
+  ],
+  register: true, // 是否注册当前模块，默认为false
+  multiInstance: false, // 多实例模式开关，默认为false，注意当开启多实例，务必保证集群中的每个项目的keys不同，或者会导致先启动的项目被隔离(被覆盖)
+  name: 'consul-plus-test', // 注册id
+  tags: ['consul-plus-test'], // 标签信息
+  check: {
+    http: 'http://127.0.0.1:8079', // 健康检测地址
+    interval: '5s', // 健康检测间隔
+    notes: 'http service check',
+    status: 'critical'
+  },
+  address: '127.0.0.1', // 当前模块的注册地址
+  port: 50051 // 当前模块的注册端口号
+};
