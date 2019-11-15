@@ -133,6 +133,6 @@ export const consul = {
     notes: 'http service check',
     status: 'critical'
   },
-  address: '127.0.0.1', // 当前模块的注册地址
+  address: '172.20.10.4', // 当前模块的注册地址
   port: 50051 // 当前模块的注册端口号
 };
