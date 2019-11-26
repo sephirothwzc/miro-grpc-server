@@ -10,6 +10,7 @@ import { provide } from 'midway';
 export class Hello {
   async SayHello(call: any, callback: any) {
     console.log(call);
+    call.request.message += 'test ';
     await callback(null, call.request);
   }
 }

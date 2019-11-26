@@ -125,7 +125,7 @@ export const consul = {
   ],
   register: true, // 是否注册当前模块，默认为false
   multiInstance: false, // 多实例模式开关，默认为false，注意当开启多实例，务必保证集群中的每个项目的keys不同，或者会导致先启动的项目被隔离(被覆盖)
-  name: 'consul-plus-test', // 注册id
+  name: 'consul-plus-test', // 注册id keys
   tags: ['consul-plus-test'], // 标签信息
   check: {
     http: 'http://127.0.0.1:8079', // 健康检测地址
@@ -133,6 +133,6 @@ export const consul = {
     notes: 'http service check',
     status: 'critical'
   },
-  address: '172.20.10.4', // 当前模块的注册地址
+  address: '10.144.108.63', // 当前模块的注册地址 不能用本地
   port: 50051 // 当前模块的注册端口号
 };
